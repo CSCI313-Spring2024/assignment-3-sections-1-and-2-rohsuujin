@@ -9,13 +9,13 @@ import { HousingLocation } from '../housing-location';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  readonly baseUrl = 'https://www.google.com/maps/search/?api=1&query=';
+  readonly baseUrl = 'https://angular.dev/assets/images/tutorials/common';
   housingLocation: HousingLocation = {
     id: 9999,
     name: 'Test Home',
     city: 'Test city',
     state: 'ST',
-    photo: '${this.baseUrl}/example-house.jpg',
+    photo: `${this.baseUrl}/example-house.jpg`,
     availabeUnits: 99,
     wifi: true,
     laundry: false
